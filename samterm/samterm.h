@@ -102,6 +102,10 @@ void    iconinit(void);
 void    getscreen(int, char**);
 void    initio(void);
 void    setlock(void);
+
+/* outcmd tells the host to apply commands to the working Flayer.
+ * safe to call, even if there isn't a working Flayer.
+ */
 void    outcmd(void);
 void    rinit(Rasp*);
 void    startnewfile(int, Text*);

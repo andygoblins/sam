@@ -76,6 +76,9 @@ void    flrefresh(Flayer*, Rectangle, int);
 
 void    flreshape(Rectangle);
 
+/* flselect tracks the mouse to select a string of text in the Frame.
+ * returns true if the mouse double-clicks.
+ */
 bool flselect(Flayer*);
 
 void    flsetselect(Flayer*, int64_t, int64_t);

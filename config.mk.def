@@ -22,7 +22,7 @@ INSTALL_DIR=$(DESTDIR)$(PREFIX)
 BINDIR?=$(INSTALL_DIR)/bin
 
 # MANDIR is where manual pages go
-MANDIR?=$(INSTALL_DIR)/share/man/
+MANDIR?=$(INSTALL_DIR)/share/man
 
 # Add additional include and library directories
 # BSD/Mac OS X users might need to add something like

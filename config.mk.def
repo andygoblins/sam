@@ -13,14 +13,16 @@ CFLAGS+=-std=c99
 # Mac OS X users need to add -D_DARWIN_C_SOURCE here.
 STANDARDS=-D_POSIX_C_SOURCE=200809L -D_XOPEN_SOURCE=500
 
-# DESTDIR is the root of the installation tree
-DESTDIR?=/usr/local
+# PREFIX is the root of the installation tree
+# Use DESTDIR for staged installs
+PREFIX?=/usr/local
+INSTALL_DIR=$(DESTDIR)$(PREFIX)
 
 # BINDIR is the directory where binaries go
-BINDIR?=$(DESTDIR)/bin
+BINDIR?=$(INSTALL_DIR)/bin
 
 # MANDIR is where manual pages go
-MANDIR?=$(DESTDIR)/share/man/
+MANDIR?=$(INSTALL_DIR)/share/man/
 
 # Add additional include and library directories
 # BSD/Mac OS X users might need to add something like

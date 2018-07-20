@@ -1,7 +1,6 @@
 /* Copyright (c) 1998 Lucent Technologies - All rights reserved. */
 /* Copyright (c) 2016 Rob King */
 
-#define _XOPEN_SOURCE 500
 #include "sam.h"
 
 #include <libgen.h>

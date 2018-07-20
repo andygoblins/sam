@@ -11,7 +11,7 @@ CFLAGS+=-std=c99
 # environment.
 #
 # Mac OS X users need to add -D_DARWIN_C_SOURCE here.
-STANDARDS=-D_POSIX_C_SOURCE=200809L -D_XOPEN_SOURCE=500
+STANDARDS=-D_POSIX_C_SOURCE=200809L -D_XOPEN_SOURCE=700
 
 # PREFIX is the root of the installation tree
 # Use DESTDIR for staged installs
